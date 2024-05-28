@@ -1,0 +1,11 @@
+<li>
+    <a href="{{ .Permalink }}">
+        {{ .Title }}
+        {{- $i := len .RegularPages -}}
+        {{- if eq $i 1 -}}
+            <small>{{ $i }} item</small>
+        {{- else -}}
+            <small>{{ $i }} items</small>
+        {{- end -}}
+    </a>
+</li>

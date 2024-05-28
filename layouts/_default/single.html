@@ -4,10 +4,10 @@
         <h1>{{ .Title }}</h1>
         <div>
         {{- if isset .Params "date" -}}
+            <time>{{ .Date.Format "2006-01-02" }}</time>
             {{ if eq .Lastmod .Date }}
-                <time>{{ .Date | time.Format (i18n "post.created") }}</time>
             {{ else }}
-                <time>{{ .Lastmod | time.Format (i18n "post.updated") }}</time>
+                &nbsp;<time>修改于： {{ .Lastmod.Format "2006-01-02" }}</time>
             {{ end }}
         {{- end -}}
         </div>

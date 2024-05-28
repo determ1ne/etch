@@ -45,7 +45,6 @@ header#banner nav {
 header#banner nav ul {
     list-style-type: none;
     font-size: 1.05em;
-    text-transform: lowercase;
     margin: 0;
     padding: 0;
 }
@@ -125,6 +124,7 @@ main#content ul#posts small {
     font-size: 0.8em;
     color: #767676;
     margin-left: 10px;
+    white-space: nowrap;
 }
 
 main#content ul#posts li a {
@@ -246,7 +246,7 @@ main#content blockquote {
 
 main#content code,
 main#content pre {
-    font-family: 'Menlo', monospace;
+    font-family: 'Consolas', 'Menlo', monospace;
 }
 
 main#content code {
@@ -279,4 +279,14 @@ footer#footer {
     font-weight: 400;
     color: #b3b3b3;
     margin: 40px 0;
+}
+
+.posts-list-item-year {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.beian-link {
+    color: #b3b3b3;
+    text-decoration: none;
 }
