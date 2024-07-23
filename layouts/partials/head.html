@@ -5,8 +5,10 @@
     <meta name="description" content="{{ . }}">
     {{ end }}
 
-    {{ if .Site.GoogleAnalytics }}
     {{ template "_internal/google_analytics.html" . }}
+
+    {{ if .Site.Params.cfAnalytics }}
+    <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "{{.Site.Params.cfAnalytics}}"}'></script>
     {{ end }}
 
     {{ printf `<link rel="shortcut icon" href="%s">` ("favicon.ico" | absURL) | safeHTML }}
