@@ -252,6 +252,8 @@ main#content pre {
 main#content code {
     font-size: 0.96em;
     padding: 0 5px;
+    background: lightgray;
+    border-radius: 4px;
 }
 
 main#content pre {
@@ -267,6 +269,7 @@ main#content pre {
 
 main#content pre code {
     padding: 0;
+    background: unset;
 }
 
 main#content .footnotes {
