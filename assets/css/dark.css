@@ -48,6 +48,11 @@ main#content ul#posts li a:hover {
 main#content header#post-header div {
     color: #a7a7a7;
 }
+
+main#content code {
+    background: #2e2e2e;
+}
+
 {{- if not (eq .Site.Params.dark "on") -}}
 }
 {{- end -}}
