@@ -296,3 +296,7 @@ footer#footer {
     color: #b3b3b3;
     text-decoration: none;
 }
+
+main#content a.tag-link {
+    color: #767676;
+}

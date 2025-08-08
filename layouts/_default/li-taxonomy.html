@@ -2,7 +2,8 @@
     <a href="{{ .Permalink }}">
         {{ .Title }}
         {{- $i := len .RegularPages -}}
-        {{- if eq $i 1 -}}
+        {{- if eq $i 0 -}}
+        {{- else if eq $i 1 -}}
             <small>{{ $i }} item</small>
         {{- else -}}
             <small>{{ $i }} items</small>

@@ -53,6 +53,10 @@ main#content code {
     background: #2e2e2e;
 }
 
+main#content a.tag-link {
+    color: #a7a7a7;
+}
+
 {{- if not (eq .Site.Params.dark "on") -}}
 }
 {{- end -}}
